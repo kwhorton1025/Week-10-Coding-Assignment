@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="p-5 text-center bg-image rounded-3"
+      style="
+        background-image: url('https://www.consumerfinancialserviceslawmonitor.com/wp-content/uploads/sites/501/2019/09/BackgroundScreening_1072312252.jpg');
+        height: 100%;
+        width: 100%;
+      "
+    >
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Technology Institute</h1>
+            <h4 class="mb-3">Enrolled Students and Classes</h4>
+            <!-- hero image at top of page with heading -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="first-name">Student's First Name</label>
+              <input type="text" class="form-control" id="first-name" />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="last-name">Student's Last Name</label>
+              <input type="text" class="form-control" id="last-name" />
+            </div>
+          </div>
+        </div>
+        <!-- end of first row of information inputs -->
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-email">Student's Email Address</label>
+              <input type="text" class="form-control" id="new-email" />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-email">Class Name</label>
+              <input type="text" class="form-control" id="class-name" />
+            </div>
+          </div>
+        </div>
+        <!-- end of second row of information inputs -->
+        <div>
+          <button id="add" class="btn btn-outline-primary">Add Student</button>
+        </div>
+        <!-- button that adds information to table below -->
+      </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped">
+      <tr>
+        <th>Student's First Name</th>
+        <th>Student's Last Name</th>
+        <th>Student's Email Address</th>
+        <th>Class Name</th>
+        <th>Remove Student</th>
+      </tr>
+    </table>
+    <!-- table that keeps track of information entered above, can delete with button -->
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
